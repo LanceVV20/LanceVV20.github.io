@@ -28,13 +28,13 @@
       (!q || [t.id, t.title, t.type, t.expected].join(' ').toLowerCase().includes(q)));
     body.innerHTML = rows.map(t => `
       <tr>
-        <td><a class="tc-id" href="${REPO}${t.file}" target="_blank" rel="noopener">${t.id}</a></td>
-        <td>${t.module}</td>
+        <td class="tc-id-cell"><a class="tc-id" href="${REPO}${t.file}" target="_blank" rel="noopener">${t.id}</a></td>
+        <td data-label="Module">${t.module}</td>
         <td class="tc-title">${esc(t.title)}</td>
-        <td><span class="type">${t.type}</span></td>
-        <td><span class="prio prio-${t.priority.toLowerCase()}">${t.priority}</span></td>
-        <td class="muted">${esc(t.expected)}</td>
-        <td><span class="pass">✓ Pass</span></td>
+        <td data-label="Type"><span class="type">${t.type}</span></td>
+        <td data-label="Priority"><span class="prio prio-${t.priority.toLowerCase()}">${t.priority}</span></td>
+        <td class="muted tc-expected" data-label="Expected">${esc(t.expected)}</td>
+        <td class="tc-status"><span class="pass">✓ Pass</span></td>
       </tr>`).join('') || `<tr><td colspan="7" class="muted empty">No test cases match.</td></tr>`;
     count.textContent = `Showing ${rows.length} of ${TEST_CASES.length} test cases`;
   }

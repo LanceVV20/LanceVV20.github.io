@@ -271,7 +271,14 @@ h2 { font-size: clamp(1.6rem, 3.5vw, 2.1rem); font-weight: 700; letter-spacing: 
   .stats { grid-template-columns: repeat(2, 1fr); }
   .stats li:nth-child(3) { border-left: 0; }
   .stats li:nth-child(n+3) { border-top: 1px solid var(--border); }
-  .nav-links { display: none; }
+  .nav-inner { flex-wrap: wrap; height: auto; padding-top: 10px; gap: 0 12px; }
+  .nav-links {
+    order: 3; flex-basis: 100%; gap: 20px; overflow-x: auto; scrollbar-width: none;
+    padding: 10px 0 12px; margin-top: 8px; border-top: 1px solid var(--border);
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
+  html { scroll-padding-top: 110px; }
 }
 @media (max-width: 560px) {
   .wrap { padding: 0 16px; }
