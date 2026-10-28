@@ -1,0 +1,16 @@
+{
+  "name": "saucedemo-playwright",
+  "version": "1.0.0",
+  "description": "Playwright E2E suite for SauceDemo",
+  "scripts": {
+    "test": "playwright test",
+    "report": "playwright show-report"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1"
+  },
+  "private": true
+}

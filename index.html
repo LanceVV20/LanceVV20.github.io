@@ -3,153 +3,354 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Juntue Dela Fuente — QA Engineer</title>
-  <meta name="description" content="QA Engineer with 4+ years of experience testing large-scale eCommerce platforms, global payment systems, and enterprise websites.">
+  <title>Juntue Dela Fuente · QA Engineer</title>
+  <meta name="description" content="QA Engineer with 4+ years testing large-scale eCommerce platforms, global payment systems, and enterprise websites.">
+  <meta property="og:title" content="Juntue Dela Fuente · QA Engineer">
+  <meta property="og:description" content="4+ years testing eCommerce, payments, and enterprise web. Playwright automation, test strategy, and QA leadership.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2316a34a'/><path d='M9 16.5l4.5 4.5L23 11.5' stroke='white' stroke-width='3.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="theme.js"></script>
 </head>
 <body>
   <header class="nav">
     <div class="wrap nav-inner">
-      <a href="#top" class="logo">JDF<span>.</span></a>
-      <nav>
+      <a href="#top" class="logo"><span class="logo-mark">✓</span> Juntue</a>
+      <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#automation">Automation</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="theme-toggle" aria-label="Toggle dark mode" onclick="toggleTheme()">
+        <svg class="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
     </div>
   </header>
 
   <main id="top">
+    <!-- Hero -->
     <section class="hero wrap">
-      <p class="status"><span class="dot"></span> All checks passing · Open to opportunities</p>
-      <h1>Juntue Dela Fuente</h1>
-      <p class="role">QA Engineer</p>
-      <p class="lead">
-        I break things on purpose so your users don't. 4+ years testing large-scale eCommerce
-        platforms, global payment systems, and enterprise websites. Currently leading QA for a
-        frontend team and driving a Playwright automation initiative.
-      </p>
-      <div class="cta">
-        <a class="btn primary" href="mailto:sparkledelafuente666@gmail.com">Get in touch</a>
-        <a class="btn" href="#experience">See my work</a>
+      <div class="hero-text">
+        <p class="pill"><span class="dot"></span> Open to new opportunities</p>
+        <h1>Juntue<br>Dela Fuente</h1>
+        <p class="role">QA Engineer · Test Automation · QA Lead</p>
+        <p class="lead">
+          I break things on purpose so your users don't. 4+ years keeping large-scale eCommerce
+          platforms, global payment systems, and enterprise websites shipping without surprises.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:sparkledelafuente666@gmail.com">Get in touch</a>
+          <a class="btn" href="case-study.html">View QA case study →</a>
+        </div>
       </div>
+
+      <div class="terminal" aria-label="Example Playwright test run">
+        <div class="term-bar"><span></span><span></span><span></span><em>~/portfolio/automation</em></div>
+        <pre class="term-body"><span class="c-muted">$</span> npx playwright test
+
+<span class="c-muted">Running 28 tests using 4 workers</span>
+
+  <span class="c-ok">✓</span> Login › standard user can log in
+  <span class="c-ok">✓</span> Login › locked out user sees an error
+  <span class="c-ok">✓</span> Inventory › sort by price low to high
+  <span class="c-ok">✓</span> Cart › cart keeps items after reload
+  <span class="c-ok">✓</span> Checkout › complete a purchase end to end
+  <span class="c-ok">✓</span> Checkout › total = subtotal + tax
+  <span class="c-bug">✘</span> <span class="c-muted">BUG-004 last name overwrites first name</span> <span class="c-warn">(expected)</span>
+  <span class="c-bug">✘</span> <span class="c-muted">BUG-006 Finish does not complete order</span> <span class="c-warn">(expected)</span>
+  <span class="c-muted">…</span>
+
+  <span class="c-ok">28 passed</span> <span class="c-muted">(9.5s)</span><span class="cursor">▍</span></pre>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="wrap">
       <ul class="stats">
         <li><strong>4+</strong><span>years in QA</span></li>
+        <li><strong>2</strong><span>remote teams, PH &amp; PL</span></li>
         <li><strong>3</strong><span>QA engineers coached</span></li>
-        <li><strong>13</strong><span>testing types</span></li>
+        <li><strong>13</strong><span>testing types in rotation</span></li>
       </ul>
     </section>
 
+    <!-- About -->
     <section id="about" class="wrap section">
-      <h2><span class="num">01</span> About</h2>
-      <div class="about">
-        <p>
-          I'm a QA Engineer based in Mangaldan, Pangasinan, working remotely with teams in Poland
-          and the Philippines. I own quality end to end: deciding what gets tested, how it's tested,
-          and who tests it.
-        </p>
-        <p>
-          My work spans microservice-based storefronts, admin panels, CMS-managed content, payment
-          gateways, digital wallets, and even multiplayer games. I care about clear documentation,
-          solid processes, and helping other testers grow.
-        </p>
-        <p class="edu">
-          <strong>BS Information Technology</strong><br>
-          Universidad de Dagupan · 2021
-        </p>
+      <div class="section-head">
+        <span class="num">01</span><h2>About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a QA Engineer from Mangaldan, Pangasinan, working remotely with product teams in
+            <strong>Poland</strong> and the <strong>Philippines</strong>. I own quality end to end:
+            I decide what gets tested, how it's tested, and who tests it.
+          </p>
+          <p>
+            Day to day that means storefronts, admin panels, CMS-managed content, payment gateways
+            and digital wallets, plus the occasional multiplayer game. I'm currently leading a Playwright
+            automation initiative from scratch and coaching a team of three QA engineers.
+          </p>
+          <p>
+            I care about clear documentation, honest bug reports, and processes that make the whole team faster.
+          </p>
+        </div>
+        <aside class="card edu">
+          <p class="eyebrow">Education</p>
+          <h3>BS Information Technology</h3>
+          <p class="muted">Universidad de Dagupan · 2021</p>
+          <hr>
+          <p class="eyebrow">Based in</p>
+          <p>Pangasinan, Philippines 🇵🇭</p>
+          <p class="muted">Remote · Open to global teams</p>
+        </aside>
       </div>
     </section>
 
+    <!-- What I test -->
+    <section class="wrap section">
+      <div class="section-head">
+        <span class="num">02</span><h2>What I test</h2>
+      </div>
+      <div class="domains">
+        <article class="card domain">
+          <div class="icon">🛒</div>
+          <h3>eCommerce at scale</h3>
+          <p>Microservice-based storefronts, admin panels, and CMS content across multiple locales.</p>
+        </article>
+        <article class="card domain">
+          <div class="icon">💳</div>
+          <h3>Global payments</h3>
+          <p>Payment gateways, digital wallets, alternative payment methods, and payment management systems.</p>
+        </article>
+        <article class="card domain">
+          <div class="icon">🤖</div>
+          <h3>Test automation</h3>
+          <p>Playwright strategy: what to automate, when, and how to keep the suite trustworthy.</p>
+        </article>
+        <article class="card domain">
+          <div class="icon">⚡</div>
+          <h3>SEO &amp; performance</h3>
+          <p>Bi-monthly health checks with Screaming Frog, Lighthouse, and PageSpeed Insights.</p>
+        </article>
+        <article class="card domain">
+          <div class="icon">📱</div>
+          <h3>Mobile &amp; cross-browser</h3>
+          <p>Real Android and iOS devices plus LambdaTest and BrowserStack.</p>
+        </article>
+        <article class="card domain">
+          <div class="icon">🎮</div>
+          <h3>Gaming</h3>
+          <p>QA for <em>Sneak Out</em>: maps, multiplayer, game servers, characters, skins, and skills.</p>
+        </article>
+      </div>
+      <div class="chips">
+        <span>Regression</span><span>Smoke</span><span>Sanity</span><span>Functional</span><span>E2E</span><span>UI/UX</span><span>API</span><span>Integration</span><span>Backend</span><span>Database</span><span>SEO</span><span>Exploratory</span><span>Mobile</span>
+      </div>
+    </section>
+
+    <!-- Experience -->
     <section id="experience" class="wrap section">
-      <h2><span class="num">02</span> Experience</h2>
+      <div class="section-head">
+        <span class="num">03</span><h2>Experience</h2>
+      </div>
 
-      <article class="job">
-        <div class="job-head">
-          <div>
-            <h3>QA Engineer <span class="at">@ Kinguin</span></h3>
-            <p class="meta">Contract · Warsaw, Poland (Remote)</p>
+      <div class="timeline">
+        <article class="job">
+          <div class="job-head">
+            <div>
+              <h3>QA Engineer <span class="at">@ Kinguin</span></h3>
+              <p class="muted">Contract · Warsaw, Poland · Remote</p>
+            </div>
+            <span class="date">Apr 2024 to present</span>
           </div>
-          <span class="date">Apr 2024 — Present</span>
-        </div>
-        <ul>
-          <li>Designated QA for the Frontend Development team across a large-scale microservice eCommerce ecosystem: storefronts, admin panels, CMS content, and responsive UIs.</li>
-          <li>Leading the Playwright test automation initiative from scratch: strategy, scope, requirements, and coordination with the automation developer.</li>
-          <li>Coach and manage three mid-level QA engineers; onboard and mentor new hires and interns.</li>
-          <li>Main QA representative in Agile ceremonies, reporting progress to stakeholders and aligning on release timelines.</li>
-          <li>Test global payment methods, gateway integrations, digital wallets, and alternative payment solutions.</li>
-          <li>Debug and verify data with Strapi CMS, Kibana, MongoDB, and Kubernetes.</li>
-          <li>Run bi-monthly SEO &amp; performance health checks with Screaming Frog, Lighthouse, and PageSpeed Insights.</li>
-          <li>QA for the game <em>Sneak Out</em>: maps, multiplayer, game servers, characters, skins, and skills.</li>
-        </ul>
-        <div class="tags">
-          <span>Playwright</span><span>Strapi</span><span>Kibana</span><span>MongoDB</span><span>Kubernetes</span><span>Confluence</span><span>Payments</span>
-        </div>
-      </article>
-
-      <article class="job">
-        <div class="job-head">
-          <div>
-            <h3>QA Analyst <span class="at">@ SLMP Digital</span></h3>
-            <p class="meta">Full Time · Pasig City, Philippines (Remote)</p>
+          <ul class="checks">
+            <li><strong>Designated QA for the Frontend team</strong> and go-to expert on product functionality across a large microservice eCommerce ecosystem.</li>
+            <li><strong>Leading test automation from scratch with Playwright:</strong> strategy, scope, requirements, and coordination with the automation developer.</li>
+            <li><strong>Coach and manage three mid-level QA engineers;</strong> onboard and mentor new hires and interns.</li>
+            <li>Primary QA owner for multiple features: deciding what gets tested, how, and by whom.</li>
+            <li>Main QA voice in Agile ceremonies, reporting progress to stakeholders and aligning on release timelines.</li>
+            <li>Validate global payment methods, gateway integrations, digital wallets, and alternative payments.</li>
+            <li>Debug and verify data with Strapi, Kibana, MongoDB, and Kubernetes.</li>
+            <li>Maintain test cases, procedures, and feature validation guides in Confluence.</li>
+          </ul>
+          <div class="tags">
+            <span>Playwright</span><span>Strapi</span><span>Kibana</span><span>MongoDB</span><span>Kubernetes</span><span>Confluence</span><span>Testomat</span>
           </div>
-          <span class="date">Jan 2022 — Present</span>
-        </div>
-        <ul>
-          <li>Contribute across account integration, website QA, enterprise websites, web apps, and mobile platforms.</li>
-          <li>Write and execute requirement-based test cases from business requirements, specs, and tickets.</li>
-          <li>UI, Regression, Smoke, Sanity, Exploratory, API, Backend, and Mobile testing on real Android and iOS devices.</li>
-          <li>Work closely with developers, PMs, SEO specialists, sysadmins, and product teams through stand-ups, demos, and releases.</li>
-          <li>Improved QA workflows with templates, checklists, and structured validation processes.</li>
-          <li>Train and support junior QA team members.</li>
-        </ul>
-        <div class="tags">
-          <span>Postman</span><span>HeidiSQL</span><span>LambdaTest</span><span>JIRA</span><span>DevTools</span><span>Teamwork</span>
-        </div>
-      </article>
-    </section>
+        </article>
 
-    <section id="skills" class="wrap section">
-      <h2><span class="num">03</span> Skills</h2>
-      <div class="skills">
-        <div class="skill-group">
-          <h4>Testing &amp; QA</h4>
-          <p>Manual Testing · Test Strategy &amp; Planning · Test Automation Management (Playwright) · API Testing · Mobile Testing · UI/UX Validation · Frontend Validation · Backend &amp; Database Validation · Performance &amp; SEO Audits · Exploratory Testing · A/B Testing</p>
-        </div>
-        <div class="skill-group">
-          <h4>Tools</h4>
-          <p>JIRA · Confluence · Testomat · Postman · HeidiSQL · Kibana · Kubernetes · LambdaTest · BrowserStack · Browser DevTools · MongoDB · Strapi · WordPress · Teamwork · Screaming Frog · Google Lighthouse · PageSpeed Insights · Claude AI</p>
-        </div>
-        <div class="skill-group">
-          <h4>Platforms</h4>
-          <p>eCommerce · SaaS · WaaS · Web Applications · Mobile Applications · CMS &amp; Multi-location Websites · Gaming Platforms</p>
-        </div>
-        <div class="skill-group">
-          <h4>Methodologies</h4>
-          <p>Agile · Scrum · Kanban</p>
-        </div>
-        <div class="skill-group">
-          <h4>Programming</h4>
-          <p>Python · HTML · CSS · PHP · JavaScript</p>
-        </div>
+        <article class="job">
+          <div class="job-head">
+            <div>
+              <h3>QA Analyst <span class="at">@ SLMP Digital</span></h3>
+              <p class="muted">Full time · Pasig City, Philippines · Remote</p>
+            </div>
+            <span class="date">Jan 2022 to present</span>
+          </div>
+          <ul class="checks">
+            <li>Test across account integration, enterprise websites, web apps, and mobile platforms.</li>
+            <li>Write and execute requirement-based test cases from business requirements, specs, and tickets.</li>
+            <li>UI, Regression, Smoke, Sanity, Exploratory, API, Backend, and Mobile testing on real Android and iOS devices.</li>
+            <li><strong>Improved QA workflows</strong> with testing templates, checklists, and structured validation processes.</li>
+            <li>Work closely with developers, PMs, SEO specialists, sysadmins, and product teams.</li>
+            <li>Train and support junior QA team members.</li>
+          </ul>
+          <div class="tags">
+            <span>Postman</span><span>HeidiSQL</span><span>LambdaTest</span><span>JIRA</span><span>DevTools</span><span>Teamwork</span>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section id="contact" class="wrap section contact">
-      <h2><span class="num">04</span> Contact</h2>
-      <p>Looking for someone to own quality on your product? Let's talk.</p>
-      <div class="cta">
-        <a class="btn primary" href="mailto:sparkledelafuente666@gmail.com">sparkledelafuente666@gmail.com</a>
-        <a class="btn" href="https://github.com/LanceVV20" target="_blank" rel="noopener">GitHub</a>
+    <!-- Work samples -->
+    <section id="work" class="wrap section">
+      <div class="section-head">
+        <span class="num">04</span><h2>Work samples</h2>
+      </div>
+      <p class="section-intro">
+        Client work is under NDA, so here's how I work, shown on a public practice app.
+        Everything below was actually executed, and every bug is reproducible.
+      </p>
+
+      <a class="feature card" href="case-study.html">
+        <div class="feature-text">
+          <p class="eyebrow">Case study · SauceDemo</p>
+          <h3>End-to-end QA of an eCommerce checkout</h3>
+          <p class="muted">
+            Test plan, 21 test cases, 7 documented bugs, and a summary report for a demo storefront,
+            all backed by an automated Playwright suite.
+          </p>
+          <ul class="mini-stats">
+            <li><strong>21</strong> test cases</li>
+            <li><strong class="red">7</strong> bugs found</li>
+            <li><strong class="green">28</strong> automated checks</li>
+          </ul>
+          <span class="link">Read the case study →</span>
+        </div>
+        <div class="feature-preview" aria-hidden="true">
+          <div class="bug-mini">
+            <div class="bug-mini-head"><span class="sev sev-blocker">Blocker</span><code>BUG-006</code></div>
+            <p>Finish button does not complete the order</p>
+          </div>
+          <div class="bug-mini">
+            <div class="bug-mini-head"><span class="sev sev-critical">Critical</span><code>BUG-004</code></div>
+            <p>Typing a last name overwrites the first name</p>
+          </div>
+          <div class="bug-mini">
+            <div class="bug-mini-head"><span class="sev sev-major">Major</span><code>BUG-001</code></div>
+            <p>All products show the same image</p>
+          </div>
+        </div>
+      </a>
+
+      <div class="samples">
+        <a class="card sample" href="case-study.html#plan">
+          <span class="sample-icon">📋</span><h4>Test plan</h4><p>Scope, approach, risks, entry/exit criteria</p>
+        </a>
+        <a class="card sample" href="case-study.html#cases">
+          <span class="sample-icon">🧪</span><h4>Test cases</h4><p>21 cases across login, inventory, cart, checkout</p>
+        </a>
+        <a class="card sample" href="case-study.html#bugs">
+          <span class="sample-icon">🐞</span><h4>Bug reports</h4><p>Steps, expected vs actual, severity, impact</p>
+        </a>
+        <a class="card sample" href="case-study.html#report">
+          <span class="sample-icon">📊</span><h4>Test report</h4><p>Results, coverage, and recommendations</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Automation -->
+    <section id="automation" class="wrap section">
+      <div class="section-head">
+        <span class="num">05</span><h2>Automation</h2>
+      </div>
+      <div class="auto-grid">
+        <div>
+          <p>
+            The case study comes with a <strong>Playwright + TypeScript</strong> suite using the Page Object
+            Model. It runs on every push and every Monday through GitHub Actions.
+          </p>
+          <p>
+            Known bugs live in the suite as <code>test.fail()</code> regression checks. The pipeline stays green
+            while a bug is open, and the moment a fix lands, the test flags it so the ticket can be closed.
+          </p>
+          <p class="badge-row">
+            <a href="https://github.com/LanceVV20/LanceVV20.github.io/actions/workflows/playwright.yml" target="_blank" rel="noopener">
+              <img src="https://github.com/LanceVV20/LanceVV20.github.io/actions/workflows/playwright.yml/badge.svg" alt="Playwright tests status" height="20">
+            </a>
+          </p>
+          <div class="cta">
+            <a class="btn" href="https://github.com/LanceVV20/LanceVV20.github.io/tree/main/automation" target="_blank" rel="noopener">Browse the code</a>
+          </div>
+        </div>
+        <pre class="code"><code><span class="k">test</span>(<span class="s">'TC-017 complete a purchase end to end'</span>, <span class="k">async</span> ({ page }) => {
+  <span class="k">await</span> checkout.<span class="f">fillInfo</span>(<span class="s">'Juntue'</span>, <span class="s">'Dela Fuente'</span>, <span class="s">'2432'</span>);
+  <span class="k">await</span> checkout.finishButton.<span class="f">click</span>();
+  <span class="k">await</span> <span class="f">expect</span>(checkout.completeHeader)
+    .<span class="f">toHaveText</span>(<span class="s">'Thank you for your order!'</span>);
+});
+
+<span class="cm">// Open defect, tracked as a regression check</span>
+<span class="k">test</span>(<span class="s">'BUG-006 Finish does not complete the order'</span>, <span class="k">async</span> ({ page }) => {
+  test.<span class="f">fail</span>();
+  <span class="cm">// ...same flow as error_user...</span>
+  <span class="k">await</span> <span class="f">expect</span>(checkout.completeHeader).<span class="f">toBeVisible</span>();
+});</code></pre>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="wrap section">
+      <div class="section-head">
+        <span class="num">06</span><h2>How I work</h2>
+      </div>
+      <ol class="process">
+        <li><span>01</span><h4>Understand</h4><p>Read the requirements, ask the awkward questions early, and map the risks.</p></li>
+        <li><span>02</span><h4>Plan</h4><p>Decide scope, test types, and who tests what. Agree on exit criteria.</p></li>
+        <li><span>03</span><h4>Design</h4><p>Write clear, requirement-based test cases that anyone on the team can run.</p></li>
+        <li><span>04</span><h4>Execute</h4><p>Scripted and exploratory testing across browsers, devices, APIs, and data.</p></li>
+        <li><span>05</span><h4>Report</h4><p>Bug reports developers can act on immediately: steps, evidence, impact.</p></li>
+        <li><span>06</span><h4>Automate</h4><p>Turn stable, high-value checks into Playwright tests that guard every release.</p></li>
+      </ol>
+    </section>
+
+    <!-- Toolbox -->
+    <section id="skills" class="wrap section">
+      <div class="section-head">
+        <span class="num">07</span><h2>Toolbox</h2>
+      </div>
+      <div class="toolbox">
+        <div class="tool-group"><h4>Testing &amp; QA</h4><div class="chips small"><span>Test Strategy &amp; Planning</span><span>Manual Testing</span><span>Automation Management</span><span>API Testing</span><span>Mobile Testing</span><span>UI/UX Validation</span><span>Backend &amp; DB Validation</span><span>Performance &amp; SEO Audits</span><span>Exploratory</span><span>A/B Testing</span></div></div>
+        <div class="tool-group"><h4>Automation &amp; API</h4><div class="chips small"><span>Playwright</span><span>Postman</span><span>Browser DevTools</span><span>Testomat</span></div></div>
+        <div class="tool-group"><h4>Data &amp; Infra</h4><div class="chips small"><span>MongoDB</span><span>HeidiSQL</span><span>Kibana</span><span>Kubernetes</span><span>Strapi</span><span>WordPress</span></div></div>
+        <div class="tool-group"><h4>Devices &amp; Browsers</h4><div class="chips small"><span>LambdaTest</span><span>BrowserStack</span><span>Real Android &amp; iOS</span></div></div>
+        <div class="tool-group"><h4>SEO &amp; Performance</h4><div class="chips small"><span>Screaming Frog</span><span>Google Lighthouse</span><span>PageSpeed Insights</span></div></div>
+        <div class="tool-group"><h4>Workflow</h4><div class="chips small"><span>JIRA</span><span>Confluence</span><span>Teamwork</span><span>Agile</span><span>Scrum</span><span>Kanban</span><span>Claude AI</span></div></div>
+        <div class="tool-group"><h4>Programming</h4><div class="chips small"><span>JavaScript</span><span>Python</span><span>HTML</span><span>CSS</span><span>PHP</span></div></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="wrap section">
+      <div class="contact card">
+        <h2>Let's ship something solid.</h2>
+        <p class="muted">Need someone to own quality on your product, or build out your automation? I'd love to hear about it.</p>
+        <div class="cta center">
+          <a class="btn primary" href="mailto:sparkledelafuente666@gmail.com">sparkledelafuente666@gmail.com</a>
+          <a class="btn" href="https://github.com/LanceVV20" target="_blank" rel="noopener">GitHub</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="wrap footer">
-    <p>© 2026 Juntue Dela Fuente · Tested in production (just kidding)</p>
+    <p>© 2026 Juntue Dela Fuente</p>
+    <p class="muted">Built with HTML &amp; CSS · Tested with Playwright</p>
   </footer>
 </body>
 </html>
