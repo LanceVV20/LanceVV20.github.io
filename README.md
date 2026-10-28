@@ -41,7 +41,7 @@ npm test
 
 ## Toolbox
 
-Playwright · Postman · JIRA · Confluence · Testomat · Kibana · Kubernetes · MongoDB · HeidiSQL · Strapi · LambdaTest · BrowserStack · Screaming Frog · Lighthouse · PageSpeed Insights
+Playwright · Postman · JIRA · Confluence · Testomat · Planner.io · Kibana · Kubernetes · MongoDB · HeidiSQL · Strapi · LambdaTest · BrowserStack · Screaming Frog · Lighthouse · PageSpeed Insights
 
 ## Contact
 
