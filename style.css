@@ -281,7 +281,7 @@ h2 { font-size: clamp(1.6rem, 3.5vw, 2.1rem); font-weight: 700; letter-spacing: 
   html { scroll-padding-top: 110px; }
 }
 @media (max-width: 560px) {
-  .wrap { padding: 0 16px; }
+  .wrap { padding-left: 16px; padding-right: 16px; }
   .domains, .process, .samples { grid-template-columns: 1fr; }
   .tool-group { grid-template-columns: 1fr; gap: 8px; }
   .feature { padding: 22px; }
