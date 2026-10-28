@@ -125,6 +125,12 @@ tbody tr:last-child td { border-bottom: 0; }
     text-transform: uppercase; letter-spacing: .05em; color: var(--muted); padding-top: 3px;
   }
   .tc-table .empty { grid-column: 1 / -1; }
+
+  /* Risks table stacks too */
+  .risk-table thead { display: none; }
+  .risk-table tr { display: grid; gap: 6px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+  .risk-table tbody tr:last-child { border-bottom: 0; }
+  .risk-table td { padding: 0; border: 0; }
 }
 @media (max-width: 560px) {
   .plan-grid, .report-grid, .ea { grid-template-columns: 1fr; }
